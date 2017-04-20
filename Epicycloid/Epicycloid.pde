@@ -12,7 +12,6 @@ float k = 7;
 float increment = 0.01;
 float max = 360 / increment;
 int H = 0;
-int S = 0;
 
 void draw()
 {
@@ -24,10 +23,9 @@ void draw()
     stroke(H, 100, 100);
     point(x,y);
     counter = counter + increment;
-    if(H == 100)
+    if(H == 360)
     {
       H = 0;
-      S = 0;
     }
     else
     {
