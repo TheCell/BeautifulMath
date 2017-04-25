@@ -13,18 +13,6 @@ void drawCircle(float radius, int middlePointx, int middlePointy)
 {
   float x = middlePointx;
   float y = middlePointy;
-  
-  /*
-  for(float i = 0; i<= 360; i = i+ 0.5)
-  {
-    line(x, y, middlePointx + cos(i)* radius, middlePointy + sin(i)*radius);
-    point(middlePointx + cos(i)* radius,middlePointy + sin(i)*radius );
-    radius = radius - 0.7;
-    x = middlePointx + cos(i)* radius;
-    y = middlePointy + sin(i)*radius;
-  }
-  */
-  
   float i = 0;
   float radiusTemp = 0;
   while(radiusTemp < radius)
@@ -34,6 +22,6 @@ void drawCircle(float radius, int middlePointx, int middlePointy)
     radiusTemp = radiusTemp + 0.5;
     x = middlePointx + cos(i) * radiusTemp;
     y = middlePointy + sin(i) * radiusTemp;
-    i = i + 0.5;
+    i = i + 0.7;
   }
 }
