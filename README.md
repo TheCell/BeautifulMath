@@ -26,4 +26,5 @@ This Repo is a collection of Drawings created with Math rules and visualised wit
 <h3>Computer Algorithms visualized</h3>
 <h4>Bubble Sort</h4>
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/AD_Bubblesort.gif" height="300" alt="Bubblesort" />
+<h4>Selection Sort</h4>
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/AD_Selectionsort.gif" height="300" alt="Selectionsort" />
