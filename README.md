@@ -5,6 +5,12 @@ This Repo is a collection of Drawings created with Math rules and visualised wit
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Spirale.PNG" height="300" alt="Spirale" />
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Spirale_01.gif" height="300" alt="Spirale 1" />
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Spirale_02.gif" height="300" alt="Spirale 2" />
+<h3>SpiraleLineAnims</h3>
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/SpiraleLineAnim_iPlus0_7.gif" height="300" alt="SpiraleLineAnim_iPlus0_7" />
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/SpiraleLineAnim_iPlus1_3.gif" height="300" alt="SpiraleLineAnim_iPlus1_3" />
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/SpiraleLineAnim_iPlus1_4.gif" height="300" alt="SpiraleLineAnim_iPlus1_4" />
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/SpiraleLineAnim_iPlus1_6.gif" height="300" alt="SpiraleLineAnim_iPlus1_6" />
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/SpiraleLineAnim_iPlus1_8.gif" height="300" alt="SpiraleLineAnim_iPlus1_8" />
 <h4>Spirale Logarithmus</h4>
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Spirale_03.gif" height="300" alt="Spirale 3" />
 <h4>Fermat Spirale</h4>
