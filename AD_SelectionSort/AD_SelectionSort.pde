@@ -30,20 +30,21 @@ void draw()
     point(array[i][0],array[i][1]);
   }
   
-  System.out.println(counter);
   eltY = array[counter][1];
   j = counter;
   
   for(int i = counter + 1; i < array.length; i++)
   {
-    if(array[i][1] < eltY)
+    if(array[i][1] > eltY)
     {
-      eltY = array[j+1][1];
-      array[j+1][1] = array[j][1];
-      array[j][1] = eltY;
+      eltY = array[i][1];
+      j = i;
+      //array[j+1][1] = array[j][1];
+      //array[j][1] = eltY;
     }
   }
-
+  
+  array[j][1] = array[counter][1];
   array[counter][1] = eltY;
   
   if(counter < (array.length - 1))
