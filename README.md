@@ -15,7 +15,8 @@ This Repo is a collection of Drawings created with Math rules and visualised wit
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Spirale_03.gif" height="300" alt="Spirale 3" />
 <h4>Fermat Spirale</h4>
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Spirale_04.gif" height="300" alt="Spirale 4" />
-
+<h4>Spirale Funnel</h4>
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/SpiralFunnel.gif" height="300" alt="Spiral Funnel" />
 <h3>Epicycloid</h3>
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/EpitrochoidOn3-generation.gif" height="300" alt="Epicycloid Wikipedia" />
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Epicycloid.gif" height="300" alt="Epicycloid" />
