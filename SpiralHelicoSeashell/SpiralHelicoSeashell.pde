@@ -16,8 +16,8 @@ void draw()
 {
   translate(500, 200);
   rotateX(-PI/2);
-  rotateZ(PI/4);
-  rotateY(PI/8);
+  //rotateZ(PI/4);
+  //rotateY(PI/8);
 
   stroke(255, 255, 255);
   strokeWeight(3);
