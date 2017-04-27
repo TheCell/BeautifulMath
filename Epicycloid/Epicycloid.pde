@@ -20,6 +20,7 @@ void draw()
     translate(750, 750);
     float x = radius*(k + 1)*cos(counter)-radius*cos((k + 1)*counter);
     float y = radius*(k + 1)*sin(counter)-radius*sin((k + 1)*counter);
+    strokeWeight(3);
     stroke(H, 100, 100);
     point(x,y);
     counter = counter + increment;
