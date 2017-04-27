@@ -3,8 +3,11 @@
 This Repo is a collection of Drawings created with Math rules and visualised with Processing.
 
 <h3>Documents</h3>
-- [SEASHELLS: THE PLAINNESS AND BEAUTY OF THEIR MATHEMATICAL DESCRIPTION](http://www.mat.uc.pt/~picado/conchas/eng/article.pdf)
-- [Perlin Noise](https://flafla2.github.io/2014/08/09/perlinnoise.html)
+1. Spirals
+* [Wikipedia](https://en.wikipedia.org/wiki/Spiral)
+* [SEASHELLS: THE PLAINNESS AND BEAUTY OF THEIR MATHEMATICAL DESCRIPTION](http://www.mat.uc.pt/~picado/conchas/eng/article.pdf)
+2. Perlin Noise
+* [Perlin Noise](https://flafla2.github.io/2014/08/09/perlinnoise.html)
 
 <h3>Spirales</h3>
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/Spirale.PNG" height="300" alt="Spirale" />
