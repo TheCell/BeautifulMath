@@ -70,7 +70,7 @@ void draw()
       float bwgradient = lerp(0,255, perlinNoise[x][y][0]);
       if (x%1000==0)
       {
-        System.out.println("perlin: " + perlinNoise[x][y][0] + " gives bwgradient: " + bwgradient);
+        //System.out.println("perlin: " + perlinNoise[x][y][0] + " gives bwgradient: " + bwgradient);
       }
       //System.out.println(bwgradient);
       stroke(bwgradient, bwgradient, bwgradient);
@@ -125,7 +125,7 @@ float perlin(float x, float y)
   n1 = dotGridGradient(x1, y0, x, y);
   ix0 = lerp(n0, n1, scaleX);
   n0 = dotGridGradient(x0, y1, x, y);
-  n1 = dotGridGradient(x1, y0, x, y);
+  n1 = dotGridGradient(x1, y1, x, y);
   ix1 = lerp(n0, n1, scaleX);
   value = lerp(ix0, ix1, scaleY);
 
