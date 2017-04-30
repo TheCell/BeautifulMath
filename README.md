@@ -38,3 +38,7 @@ This Repo is a collection of Drawings created with Math rules and visualised wit
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/AD_Selectionsort.gif" height="300" alt="Selectionsort" />
 <h4>Insertion Sort</h4>
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/AD_InsertionSort.gif" height="300" alt="Insertionsort" />
+
+<h3>Perlin Noise</h3>
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/PerlinNoise.png" height="300" alt="Perlin Noise" />
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/PerlinNoiseHeightOnly.png" height="300" alt="Perlin Noise Height Only" />
