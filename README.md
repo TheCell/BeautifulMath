@@ -47,4 +47,4 @@ This Repo is a collection of Drawings created with Math rules and visualised wit
 
 
 <h3>Markov Chain</h3>
-<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/seinOderUnsinn.tif" height="300" alt="Sein oder Unsinn" />
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/seinOderUnsinn.png" height="300" alt="Sein oder Unsinn" />

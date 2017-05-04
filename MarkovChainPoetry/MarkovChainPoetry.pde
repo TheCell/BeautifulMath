@@ -107,6 +107,7 @@ void draw()
 
   if (recordPDF)
   {
+    saveFrame("poem-####.png");
     beginRecord(PDF, "poem-####.pdf");
   }
 
@@ -132,7 +133,6 @@ void mouseClicked()
     poetryLine = "";
     counter = 0;
   } else if (mouseButton == RIGHT) {
-    saveFrame();
     recordPDF = true;
   }
 }
