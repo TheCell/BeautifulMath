@@ -18,7 +18,8 @@ void setup()
   //reader = createReader("WilliamShakespearSonett1To15.txt");
   //reader = createReader("Marienkind.txt");
   //reader = createReader("WolfUndSiebenGeisslein.txt");
-  reader = createReader("seinOderNichtSein.txt");
+  //reader = createReader("seinOderNichtSein.txt");
+  reader = createReader("thelovesongJAlfredPrufrock.txt");
 
   size(1500, 500);
   background(255);
