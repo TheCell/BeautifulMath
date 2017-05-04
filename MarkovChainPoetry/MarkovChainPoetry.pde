@@ -1,15 +1,26 @@
 import java.util.LinkedList;
+import processing.pdf.*;
 
 BufferedReader reader;
 String line;
 HashMap<Integer, LinkedList<String>> wordsMap = new HashMap();
 int[] allWords;
+int counter = 0;
+String poetryLine = "";
+boolean recordPDF = false;
 
 void setup()
 {
   // Open the file from the createWriter() example
-  reader = createReader("DantesGoettlicheKomoedieKapitel2.txt");
-  size(1500, 1500);
+  //reader = createReader("DantesGoettlicheKomoedieKapitel2.txt");
+  //reader = createReader("SunziKunstDesKrieges.txt");
+  //reader = createReader("EintrittderGermanenInDieGeschichte.txt");
+  //reader = createReader("WilliamShakespearSonett1To15.txt");
+  //reader = createReader("Marienkind.txt");
+  //reader = createReader("WolfUndSiebenGeisslein.txt");
+  reader = createReader("seinOderNichtSein.txt");
+
+  size(1500, 500);
   background(255);
 
   line = "";
@@ -57,7 +68,7 @@ void setup()
 
   // from here on every Word has an linkedList with all words that came after that word
   //println(wordsMap.get("Dichter".hashCode()));
-  println(wordsMap.keySet());
+  //println(wordsMap.keySet());
   allWords = new int[wordsMap.keySet().size()];
   Object[] wordsMapArr = wordsMap.keySet().toArray();
 
@@ -69,22 +80,59 @@ void setup()
 
 void draw()
 {
-  String poetryLine = "";
-  int randomNumber;
-  LinkedList tempList;
+  background(255);
 
-  int wordForNext = allWords[(int) random(allWords.length)];
-
-  for (int i = 0; i < 8; i++)
+  if (counter < 5)
   {
-    tempList = wordsMap.get(wordForNext);
-    if (tempList != null)
+    int randomNumber;
+    LinkedList tempList;
+
+    int wordForNext = allWords[(int) random(allWords.length)];
+
+    for (int i = 0; i < 8; i++)
     {
-      randomNumber = (int) random(tempList.size());
-      wordForNext = tempList.get(randomNumber).hashCode();
-      poetryLine += tempList.get(randomNumber) + " ";
+      tempList = wordsMap.get(wordForNext);
+
+      if (tempList != null)
+      {
+        randomNumber = (int) random(tempList.size());
+        wordForNext = tempList.get(randomNumber).hashCode();
+        poetryLine += tempList.get(randomNumber) + " ";
+      }
     }
+
+    //println(poetryLine);
+    counter++;
   }
 
-  println(poetryLine);
+  if (recordPDF)
+  {
+    beginRecord(PDF, "poem-####.pdf");
+  }
+
+  textSize(30);
+  fill(50);
+  text(poetryLine, 300, 100, 900, 500);  // Text wraps within text box
+  if (recordPDF)
+  {
+    endRecord();
+    recordPDF = false;
+  }
+
+  if (counter == 5)
+  {
+    println(poetryLine);
+    counter++;
+  }
+}
+
+void mouseClicked()
+{
+  if (mouseButton == LEFT) {
+    poetryLine = "";
+    counter = 0;
+  } else if (mouseButton == RIGHT) {
+    saveFrame();
+    recordPDF = true;
+  }
 }
