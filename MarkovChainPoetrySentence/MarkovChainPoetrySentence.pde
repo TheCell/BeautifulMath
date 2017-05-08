@@ -8,6 +8,7 @@ int[] allWords;
 int counter = 0;
 String poetryLine = "";
 boolean recordPDF = false;
+int debugCounter = 0;
 
 void setup()
 {
@@ -17,13 +18,9 @@ void setup()
   //reader = createReader("EintrittderGermanenInDieGeschichte.txt");
   //reader = createReader("WilliamShakespearSonett1To15.txt");
   //reader = createReader("Marienkind.txt");
-  //reader = createReader("theRaven.txt");
   //reader = createReader("WolfUndSiebenGeisslein.txt");
   //reader = createReader("seinOderNichtSein.txt");
   reader = createReader("thelovesongJAlfredPrufrock.txt");
-
-  size(1500, 500);
-  background(255);
 
   line = "";
   while (line != null)
@@ -89,9 +86,12 @@ void draw()
     int randomNumber;
     LinkedList tempList;
 
+    boolean sentenceComplete = false;
+    String tempSentence = "";
+
     int wordForNext = allWords[(int) random(allWords.length)];
 
-    for (int i = 0; i < 8; i++)
+    while (!sentenceComplete)
     {
       tempList = wordsMap.get(wordForNext);
 
@@ -99,9 +99,49 @@ void draw()
       {
         randomNumber = (int) random(tempList.size());
         wordForNext = tempList.get(randomNumber).hashCode();
-        poetryLine += tempList.get(randomNumber) + " ";
+        poetryLine += " " + tempList.get(randomNumber);
+      } else {
+        wordForNext = allWords[(int) random(allWords.length)];
+      }
+
+      if (tempSentence.length() > 144)
+      {
+        if (debugCounter < 5)
+        {
+          println(tempSentence);
+          debugCounter++;
+        }
+
+        tempSentence = "";
+      }
+
+      if (tempSentence.length() > 20 && tempSentence.length() < 144 && 
+        (tempSentence.endsWith(". ")
+        || tempSentence.endsWith("! ")
+        || tempSentence.endsWith("? ")
+        || tempSentence.endsWith("; ")
+        || tempSentence.endsWith("\" ")))
+      {
+        sentenceComplete = true;
+        println("done");
       }
     }
+
+    poetryLine = tempSentence;
+
+    /*
+    for (int i = 0; i < 8; i++)
+     {
+     tempList = wordsMap.get(wordForNext);
+     
+     if (tempList != null)
+     {
+     randomNumber = (int) random(tempList.size());
+     wordForNext = tempList.get(randomNumber).hashCode();
+     poetryLine += tempList.get(randomNumber) + " ";
+     }
+     }
+     */
 
     //println(poetryLine);
     counter++;
