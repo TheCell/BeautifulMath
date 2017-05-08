@@ -17,8 +17,9 @@ void setup()
   //reader = createReader("EintrittderGermanenInDieGeschichte.txt");
   //reader = createReader("WilliamShakespearSonett1To15.txt");
   //reader = createReader("Marienkind.txt");
-  //reader = createReader("WolfUndSiebenGeisslein.txt");
-  reader = createReader("seinOderNichtSein.txt");
+  reader = createReader("WolfUndSiebenGeisslein.txt");
+  //reader = createReader("seinOderNichtSein.txt");
+  //reader = createReader("theRaven.txt");
 
   size(1500, 500);
   background(255);
