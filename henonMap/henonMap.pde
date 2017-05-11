@@ -1,6 +1,6 @@
 PVector[][] pointArr;
-int squaresize = 100;
-int xOffset = 1000;
+int squaresize = 500;
+int xOffset = 800;
 int yOffset = 1000;
 int counter = 0;
 
@@ -33,9 +33,9 @@ void draw()
 
   if (counter < 10)
   {
-    calcHenonMap(0.1, 1);
+    calcHenonMap(0.005, 1);
     counter++;
-    saveFrame("henonMap##");
+    saveFrame("henonMap##.png");
   }
 }
 
