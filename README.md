@@ -50,3 +50,6 @@ This Repo is a collection of Drawings created with Math rules and visualised wit
 
 <h3>Feigenbaum</h3>
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/feigenbaum.gif" height="300" alt="Feigenbaum" />
+
+<h3>henon Map</h3>
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/henonMap.gif" height="300" alt="henonMap" />
