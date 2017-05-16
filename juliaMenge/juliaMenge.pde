@@ -1,5 +1,5 @@
-float cxadd = -.75;
-float c2yadd = 0;
+float cxadd = -0.75;
+float c2yadd = 0.2;
 int size = 1500;
 int y = 0;
 boolean drawingComplete = false;
@@ -25,8 +25,12 @@ void draw()
       {
         float mappedNumberX = map(x, 0, size, -mandelbrotEdge/zoomFactor, mandelbrotEdge/zoomFactor);
         float mappedNumberY = map(y, 0, size, -mandelbrotEdge/zoomFactor, mandelbrotEdge/zoomFactor);
-
-        int counter = Julia(mappedNumberX+xOffset, mappedNumberY+yOffset, cxadd, c2yadd, mandelbrotEdge+2, maxIterations);
+        
+        // mandelbaum
+        int counter = Julia(mappedNumberX+xOffset, mappedNumberY+yOffset, mappedNumberX, mappedNumberY, mandelbrotEdge+2, maxIterations);
+        //int counter = Julia(mappedNumberX+xOffset, mappedNumberY+yOffset, mappedNumberX+cxadd, mappedNumberY+c2yadd, mandelbrotEdge+2, maxIterations);
+        // julia
+        //int counter = Julia(mappedNumberX+xOffset, mappedNumberY+yOffset, cxadd, c2yadd, mandelbrotEdge+2, maxIterations);
         setColor(counter, maxIterations);
         point(x, y);
       }
@@ -77,7 +81,7 @@ void setColor(int iteration, int maxIteration)
   if (iteration < maxIteration)
   {
     // colorOffset is value from 0 - 360. See HSB color range
-    int colorOffset = 60;
+    int colorOffset = 0;
     stroke((iteration*10+colorOffset)%maxIteration, maxIteration, maxIteration, maxIteration);
   } else
   {
