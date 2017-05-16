@@ -33,6 +33,7 @@ void draw()
 
       if (y >= size)
       {
+        // for animation comment out drawingComplete and comment one of the following bellow
         y = 0;
         drawingComplete = true;
         //zoomFactor += 1;
@@ -75,7 +76,9 @@ void setColor(int iteration, int maxIteration)
   colorMode(HSB, maxIteration);
   if (iteration < maxIteration)
   {
-    stroke(iteration*10%maxIteration, maxIteration, maxIteration, maxIteration);
+    // colorOffset is value from 0 - 360. See HSB color range
+    int colorOffset = 60;
+    stroke((iteration*10+colorOffset)%maxIteration, maxIteration, maxIteration, maxIteration);
   } else
   {
     stroke(0, maxIteration, 0);
