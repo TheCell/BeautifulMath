@@ -62,6 +62,7 @@ void draw()
     for (int x = 0; x < sizeX; x++)
     {
       float bwgradient = lerp(0, 255, (perlinNoise[x][y][0]+1)/2);
+      //float bwgradient = lerp(0, 255, (abs(perlinNoise[x][y][0])));
       if (x%1000==0)
       {
         //System.out.println("perlin: " + perlinNoise[x][y][0] + " gives bwgradient: " + bwgradient);
