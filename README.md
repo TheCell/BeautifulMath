@@ -73,3 +73,6 @@ cxadd = -0.75;
 c2yadd = -0.2;
 
 [Julia Menge](https://de.wikipedia.org/wiki/Julia-Menge)
+
+<h3>Recursive Tree</h3>
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/recursiveTree.gif" height="300" alt="Recursive Tree" />
