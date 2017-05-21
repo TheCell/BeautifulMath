@@ -26,7 +26,7 @@ void draw()
         float mappedNumberX = map(x, 0, size, -mandelbrotEdge/zoomFactor, mandelbrotEdge/zoomFactor);
         float mappedNumberY = map(y, 0, size, -mandelbrotEdge/zoomFactor, mandelbrotEdge/zoomFactor);
         
-        // mandelbaum
+        // mandelbrot
         int counter = Julia(mappedNumberX+xOffset, mappedNumberY+yOffset, mappedNumberX, mappedNumberY, mandelbrotEdge+2, maxIterations);
         //int counter = Julia(mappedNumberX+xOffset, mappedNumberY+yOffset, mappedNumberX+cxadd, mappedNumberY+c2yadd, mandelbrotEdge+2, maxIterations);
         // julia
@@ -82,7 +82,10 @@ void setColor(int iteration, int maxIteration)
   {
     // colorOffset is value from 0 - 360. See HSB color range
     int colorOffset = 0;
-    stroke((iteration*10+colorOffset)%maxIteration, maxIteration, maxIteration, maxIteration);
+    // colored
+    stroke((iteration*10+colorOffset)%maxIteration, maxIteration, maxIteration);
+    // black & white
+    //stroke(0, 0, (iteration*10+colorOffset)%maxIteration);
   } else
   {
     stroke(0, maxIteration, 0);
