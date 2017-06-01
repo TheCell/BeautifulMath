@@ -76,3 +76,8 @@ c2yadd = -0.2;
 
 <h3>Recursive Tree</h3>
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/recursiveTree.gif" height="300" alt="Recursive Tree" />
+
+<h3>Cellular Automata</h3>
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/cellularAutomata.gif" height="300" alt="1 dimensional" />
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/cellularAutomata_gol.gif" height="300" alt="Game of Life" />
+<img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/cellularAutomata_gol2.gif" height="300" alt="Game of Life 2" />
