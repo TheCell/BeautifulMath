@@ -9,6 +9,7 @@ void setup() {
     
 }
 
+// Archimedian
 void drawCircle(float radius, int middlePointx, int middlePointy)
 {
   for(float i = 0; i<= 1440; i = i+ 0.5)
