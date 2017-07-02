@@ -15,16 +15,13 @@ void setup()
 
 void draw()
 {
-  //background(204);
   tempVal = 0.1;
   for (int i = 0; i < nMax; i++)
   {
     if (i > nMin)
     {
-      //line(i,factor*lastVal+(height/2),i+1,factor*tempVal+(height/2));
       point(tempR*xStretchFactor-xOffset, yStretchFactor*(tempVal)+yOffset);
     }
-
     tempVal = calcHausdorffDimension(tempVal, tempR);
   }
   if (tempR < 4.2)
