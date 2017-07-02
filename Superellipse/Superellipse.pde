@@ -13,17 +13,11 @@ void draw()
 void drawSuperellipse(int radius, int middlePointx, int middlePointy, float n)
 {
   float increment = PI/(n);
-  for(float i = 0; i<= 720; i = i + 0.5)
+  for(float i = 0; i<= 720; i += 0.5)
   {
     point(middlePointx + radius * pow(cos(i),2/n), middlePointy + radius * pow(sin(i),2/n));
     point(middlePointx + radius * pow(cos(i),2/n), middlePointy - radius * pow(sin(i),2/n));
     point(middlePointx - radius * pow(cos(i),2/n), middlePointy + radius * pow(sin(i),2/n));
     point(middlePointx - radius * pow(cos(i),2/n), middlePointy - radius * pow(sin(i),2/n));
-    
-    /*
-    point(middlePointx + radius * pow(cos(i),2*n), middlePointy + radius * pow(sin(i),2/n));
-    point(middlePointx + radius * pow(cos(i),2/n), middlePointy + radius * pow(sin(i),2*n));
-    point(middlePointx + radius * pow(cos(i),2*n), middlePointy + radius * pow(sin(i),2*n));
-    */
   }
 }
