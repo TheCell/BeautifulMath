@@ -20,7 +20,25 @@ void setup()
   lineArray[lineArray.length / 2][lineArray[0].length / 2] = 1;
   lineArray[lineArray.length / 2 + 1][lineArray[0].length / 2 + 1] = 1;
   lineArray[lineArray.length / 2 + 2][lineArray[0].length / 2 + 2] = 1;
-
+  
+  lineArray[lineArray.length / 2 + 50][lineArray[0].length / 2 + 50] = 1;
+  lineArray[lineArray.length / 2 + 50 + 1][lineArray[0].length / 2 + 50 + 1] = 1;
+  lineArray[lineArray.length / 2 + 50 + 2][lineArray[0].length / 2 + 50 + 2] = 1;
+  
+  lineArray[lineArray.length / 2 -20][lineArray[0].length / 2] = 1;
+  lineArray[lineArray.length / 2 -20][lineArray[0].length / 2 + 1] = 1;
+  lineArray[lineArray.length / 2 -20][lineArray[0].length / 2 + 2] = 1;
+  
+  lineArray[lineArray.length / 2 -20][lineArray[0].length / 2 -20] = 1;
+  lineArray[lineArray.length / 2 -20][lineArray[0].length / 2 -20 + 1] = 1;
+  lineArray[lineArray.length / 2 -20 +1][lineArray[0].length / 2 -20] = 1;
+  
+  lineArray[20][20] = 1;
+  lineArray[20 +1][20] = 1;
+  lineArray[20 +1][20 -1] = 1;
+  lineArray[20 +1][20 +1] = 1;
+  lineArray[20 +2][20 -1] = 1;
+  
   size(1600, 1600);
 }
 
@@ -68,8 +86,10 @@ void nextEvolution(int[][] arr)
       cellsAlive += ArrayLogic.getTopLeft(arr, x, y);
       cellsAlive += ArrayLogic.getTop(arr, x, y);
       cellsAlive += ArrayLogic.getTopRight(arr, x, y);
+      
       cellsAlive += ArrayLogic.getLeft(arr, x, y);
       cellsAlive += ArrayLogic.getRight(arr, x, y);
+      
       cellsAlive += ArrayLogic.getBottomLeft(arr, x, y);
       cellsAlive += ArrayLogic.getBottom(arr, x, y);
       cellsAlive += ArrayLogic.getBottomRight(arr, x, y);

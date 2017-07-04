@@ -5,7 +5,7 @@ class Ruleset2D
   public Ruleset2D()
   {
     //this.ruleset = new int[]{0, 0, 1, 1, 0, 0, 0, 0, 0, 0};
-    this.ruleset = new int[]{0, 0, 1, 1, 0, 0, 0, 0, 0, 0};
+    this.ruleset = new int[]{0, 0, 1, 0, 0, 0, 0, 0, 0, 0};
   }
 
   public Ruleset2D(int[] rules)
