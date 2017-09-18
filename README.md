@@ -8,6 +8,8 @@ This Repo is a collection of Drawings created with Math rules and visualised wit
   - [SEASHELLS: THE PLAINNESS AND BEAUTY OF THEIR MATHEMATICAL DESCRIPTION](http://www.mat.uc.pt/~picado/conchas/eng/article.pdf)
 2. Perlin Noise
   - [Perlin Noise](https://flafla2.github.io/2014/08/09/perlinnoise.html)
+3. Julia Set and Mandelbrot
+  - [Julia and Mandelbrot explained](http://www.relativitybook.com/CoolStuff/julia_set.html)
 
 <h3>Spirales</h3>
 <img src="https://raw.githubusercontent.com/TheCell/BeautifulMath/master/Images/Spirale.PNG" height="300" alt="Spirale" />
